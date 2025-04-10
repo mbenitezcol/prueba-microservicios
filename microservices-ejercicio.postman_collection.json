@@ -1,0 +1,183 @@
+{
+  "info": {
+    "name": "Microservicios Ejercicio",
+    "_postman_id": "12345678-90ab-cdef-1234-567890abcdef",
+    "description": "Coleccion para probar cliente-persona y cuenta-movimiento services",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Cliente",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n \"personId": "\1",\n  \"nombre\": \"Juan\",\n  \"genero\": \"Masculino\",\n  \"edad\": 30,\n  \"identificacion\": \"1234567890\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"telefono\": \"0999999999\",\n  \"contrasena\": \"1234\",\n  \"estado\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obtener Todos los Clientes",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Cuenta Cliente",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clienteId\": \"1\",\n  \"tipoCuenta\": \"ahorros\",\n  \"saldoInicial\": 253000,\n   \"estado\": true\n}"
+        },      
+        "url": {
+          "raw": "http://localhost:8082/api/cuentas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "cuentas"
+          ]
+        }
+      }
+    },    
+    {
+      "name": "Ver Cuenta Cliente",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8082/api/cuentas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "cuentas",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Registrar Movimiento (Credito)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fecha\": \"2025-04-07\",\n  \"tipoMovimiento\": \"credito\",\n  \"valor\": 100.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/movimientos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "movimientos",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ver Movimientos por Cuenta",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8082/api/movimientos/cuenta/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "movimientos",
+            "cuenta",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ver Movimientos por Rango de Fechas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8082/api/movimientos/cuenta/1/rango?desde=2025-04-01&hasta=2025-04-30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "movimientos",
+            "cuenta",
+            "1",
+            "rango"
+          ],
+          "query": [
+            {
+              "key": "desde",
+              "value": "2025-04-01"
+            },
+            {
+              "key": "hasta",
+              "value": "2025-04-30"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

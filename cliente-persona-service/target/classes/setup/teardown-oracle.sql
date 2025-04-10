@@ -1,0 +1,4 @@
+-- src/main/resources/setup/teardown-oracle.sql
+DROP USER prueba CASCADE;
+DROP TABLESPACE prueba_data INCLUDING CONTENTS AND DATAFILES;
+DROP TABLESPACE prueba_index INCLUDING CONTENTS AND DATAFILES;

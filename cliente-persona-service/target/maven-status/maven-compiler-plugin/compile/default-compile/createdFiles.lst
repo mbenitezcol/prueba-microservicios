@@ -1,0 +1,14 @@
+com\ejercicio\clientepersona\events\ClienteEventPublisher.class
+com\ejercicio\clientepersona\config\OracleTeardownExecutor.class
+com\ejercicio\clientepersona\dto\ClienteDTO.class
+com\ejercicio\clientepersona\domain\model\Persona.class
+com\ejercicio\clientepersona\events\ClienteCreadoEvent.class
+com\ejercicio\clientepersona\exception\GlobalExceptionHandler.class
+com\ejercicio\clientepersona\infrastructure\repository\ClienteRepository.class
+com\ejercicio\clientepersona\application\ClienteService.class
+com\ejercicio\clientepersona\exception\ResourceNotFoundException.class
+com\ejercicio\clientepersona\domain\model\Cliente.class
+com\ejercicio\clientepersona\infrastructure\controller\ClienteController.class
+com\ejercicio\clientepersona\dto\PersonaDTO.class
+com\ejercicio\clientepersona\config\OracleSetupExecutor.class
+com\ejercicio\clientepersona\ClientePersonaApplication.class

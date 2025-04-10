@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+
+  oracle-db:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: oracle-db
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: oracle
+    networks:
+      - micro_net
+
+  cliente-persona:
+    build:
+      context: ./cliente-persona-service
+    container_name: cliente-persona-service
+    ports:
+      - "8081:8080"
+    depends_on:
+      - oracle-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@oracle-db:1521/XEPDB1
+      SPRING_DATASOURCE_USERNAME: prueba
+      SPRING_DATASOURCE_PASSWORD: prueba
+      SERVICIO_CLIENTE_PERSONA_URL: http://cliente-persona:8081
+    networks:
+      - micro_net
+
+  cuenta-movimiento:
+    build:
+      context: ./cuenta-movimiento-service
+    container_name: cuenta-movimiento-service
+    ports:
+      - "8082:8080"
+    depends_on:
+      - oracle-db
+      - cliente-persona
+      
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@oracle-db:1521/XEPDB1
+      SPRING_DATASOURCE_USERNAME: prueba
+      SPRING_DATASOURCE_PASSWORD: prueba
+      SERVICIO_CLIENTE_PERSONA_URL: http://cliente-persona:8082
+      
+      SERVER_PORT: 8082
+    networks:
+      - micro_net
+
+networks:
+  micro_net:
+    driver: bridge

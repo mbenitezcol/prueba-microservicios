@@ -1,0 +1,14 @@
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\domain\model\Persona.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\application\ClienteService.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\config\OracleSetupExecutor.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\infrastructure\repository\ClienteRepository.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\events\ClienteCreadoEvent.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\dto\ClienteDTO.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\infrastructure\controller\ClienteController.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\ClientePersonaApplication.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\config\OracleTeardownExecutor.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\events\ClienteEventPublisher.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\exception\GlobalExceptionHandler.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\domain\model\Cliente.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\dto\PersonaDTO.java
+I:\OpenXava_Studio_7_R4\workspace\cliente-persona-service\src\main\java\com\ejercicio\clientepersona\exception\ResourceNotFoundException.java

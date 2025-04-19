@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "3063f9bc-8826-46de-9b8b-54630d1c8fa4",
+		"name": "Prueba /cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12730173"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Cliente\",\r\n    \"identificacion\": \"1234567890\",\r\n    \"contrasena\": \"claveSegura\",\r\n    \"direccion\": \"Calle Inventada 456\",\r\n    \"telefono\": \"555-9876\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 28,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "clienteById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/clientes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "clienteById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Cliente Actualizado\",\r\n    \"direccion\": \"Nueva Dirección 789\",\r\n    \"estado\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/clientes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "clientById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8082/clientes/1"
+			},
+			"response": []
+		}
+	]
+}

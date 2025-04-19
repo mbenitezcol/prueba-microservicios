@@ -1,0 +1,54 @@
+{
+   "Cuenta_ID":       1
+  ,"Tipo_Movimiento": "CREDITO"
+  ,"fecha":           "2025-02-18T08:00:00"
+  ,"valor":           500000.00
+}
+{
+   "Cuenta_ID":       1
+  ,"Tipo_Movimiento": "DEBITO"
+  ,"fecha":           "2025-03-04T11:30:00"  
+  ,"valor":           200000.00
+}
+{
+   "Cuenta_ID":       2
+  ,"Tipo_Movimiento": "CREDITO"
+  ,"fecha":           "2025-01-31T11:30:00"    
+  ,"valor":           750000
+}
+{
+   "Cuenta_ID":       2
+  ,"Tipo_Movimiento": "DEBITO"
+  ,"fecha":           "2025-02-15T11:30:00"    
+  ,"valor":           200520
+}
+{
+   "Cuenta_ID":       3
+  ,"Tipo_Movimiento": "CREDITO"
+  ,"fecha":           "2025-04-01T11:30:00"    
+  ,"valor":           750000
+}
+{
+   "Cuenta_ID":       4
+  ,"Tipo_Movimiento": "CREDITO"
+  ,"fecha":           "2025-03-09T11:30:00"    
+  ,"valor":           750000.00
+}
+{
+   "Cuenta_ID":       4
+  ,"Tipo_Movimiento": "DEBITO"
+  ,"fecha":           "2025-03-31T11:30:00"    
+  ,"valor":           482300.00
+}
+{
+   "Cuenta_ID":       5
+  ,"Tipo_Movimiento": "CREDITO"
+  ,"fecha":           "2025-04-02T11:30:00"    
+  ,"valor":           35000
+}
+{
+   "Cuenta_ID":       5
+  ,"Tipo_Movimiento": "DEBITO"
+  ,"fecha":           "2025-04-03T09:30:00"    
+  ,"valor":           10000
+}

@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "b0f049da-68f3-4a47-934e-4856b4c25430",
+		"name": "Prueba /cuenta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12730173"
+	},
+	"item": [
+		{
+			"name": "cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteId\": 0,\r\n    \"numeroCuenta\": \"9876543210\",\r\n    \"tipoCuenta\": \"AHORROS\",\r\n    \"saldoInicial\": 500.00,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/cuentas"
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/cuentas"
+			},
+			"response": []
+		},
+		{
+			"name": "cuentaByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/cuentas/3"
+			},
+			"response": []
+		},
+		{
+			"name": "cuentaByNumeroCuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/cuentas/9876543210"
+			},
+			"response": []
+		},
+		{
+			"name": "cuentaById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

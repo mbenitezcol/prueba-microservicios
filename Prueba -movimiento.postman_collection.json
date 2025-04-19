@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "067ac8ad-1f42-4d5f-aa74-80043edfb73c",
+		"name": "Prueba /movimiento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12730173"
+	},
+	"item": [
+		{
+			"name": "Registrar un nuevo movimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Cuenta_ID\":       1\r\n  ,\"Tipo_Movimiento\": \"CREDITO\"\r\n  ,\"fecha\":           \"2025-02-18T08:00:00\"\r\n  ,\"valor\":           500000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/movimientos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener movimiento por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/movimientos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener movimientos por número de cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/movimientos/cuenta/100200300"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener movimientos por rango de fechas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/movimientos/cuenta/100200300/rango?desde=\"2025-03-18T10:00:00\"&hasta=\"2025-04-18T10:00:00\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movimientos",
+						"cuenta",
+						"100200300",
+						"rango"
+					],
+					"query": [
+						{
+							"key": "desde",
+							"value": "\"2025-03-18T10:00:00\""
+						},
+						{
+							"key": "hasta",
+							"value": "\"2025-04-18T10:00:00\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar movimiento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\": \"2025-04-18T12:00:00\",\r\n    \"valor\": 75.00\r\n    // Solo los campos que se desean actualizar\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/movimientos/1"
+			},
+			"response": []
+		}
+	]
+}

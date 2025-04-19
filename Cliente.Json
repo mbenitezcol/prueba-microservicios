@@ -1,0 +1,72 @@
+{
+   "Persona_ID":      1
+  ,"Cliente_ID":      1
+  ,"Nombre":          "Juan Pérez" 
+  ,"Genero":          "Masculino"   
+  ,"Edad":            35
+  ,"Identificacion":  "CC123456"
+  ,"Direccion":       "Cra 10 #20-30" 
+  ,"Telefono":        "3101234567"  
+  ,"Contrasena":      "pass123"  
+  ,"estado":          "TRUE" 
+}
+{
+   "Persona_ID":      2
+  ,"Cliente_ID":      2
+  ,"Nombre":          "Ana Gómez" 
+  ,"Genero":          "Femenino"   
+  ,"Edad":            28
+  ,"Identificacion":  "CC654321"
+  ,"Direccion":       "Calle 45 #12-50" 
+  ,"Telefono":        "3159876543"  
+  ,"Contrasena":      "pass456"  
+  ,"estado":          "TRUE" 
+}
+{
+   "Persona_ID":      3
+  ,"Cliente_ID":      3
+  ,"Nombre":          "Jose Lema" 
+  ,"Genero":          "Mascuino"   
+  ,"Edad":            40
+  ,"Identificacion":  "CC8721036"
+  ,"Direccion":       "Otavalo sn y principal" 
+  ,"Telefono":        "098024785"  
+  ,"Contrasena":      "1234"  
+  ,"estado":          "TRUE" 
+}
+{
+   "Persona_ID":      4
+  ,"Cliente_ID":      4
+  ,"Nombre":          "Marianela Montalvo" 
+  ,"Genero":          "Femenino"   
+  ,"Edad":            19
+  ,"Identificacion":  "CC3579518246"
+  ,"Direccion":       "Amazonas y NNUU" 
+  ,"Telefono":        "097548965"  
+  ,"Contrasena":      "5678"  
+  ,"estado":          "TRUE" 
+}
+{
+   "Persona_ID":      5
+  ,"Cliente_ID":      5
+  ,"Nombre":          "Juan Osorio" 
+  ,"Genero":          "Masculino"   
+  ,"Edad":            52
+  ,"Identificacion":  "CC741236985"
+  ,"Direccion":       "13 junio y Equinoccial" 
+  ,"Telefono":        "0988745887"  
+  ,"Contrasena":      "1245"  
+  ,"estado":          "TRUE" 
+}
+{
+   "Persona_ID":      6
+  ,"Cliente_ID":      6
+  ,"Nombre":          "Yolanda Rojas" 
+  ,"Genero":          "Femenino"   
+  ,"Edad":            64
+  ,"Identificacion":  "CC1025478231"
+  ,"Direccion":       "Calle 22 # 45 - 67 apto 1304" 
+  ,"Telefono":        "3514568726"  
+  ,"Contrasena":      "795123"  
+  ,"estado":          "TRUE" 
+}

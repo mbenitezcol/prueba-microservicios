@@ -1,0 +1,42 @@
+{
+   "Persona_ID":      1
+  ,"Numero_Cuenta":   "100200300" 
+  ,"Tipo_Cuenta":     "Ahorros"
+  ,"Saldo_Inicial":   1800000.00
+  ,"Estado":          "TRUE"
+}
+{
+   "Persona_ID":      2
+  ,"Numero_Cuenta":   "478758" 
+  ,"Tipo_Cuenta":     "Ahorros"
+  ,"Saldo_Inicial":   200520.00
+  ,"Estado":          "TRUE"
+}
+{
+   "Persona_ID":      3
+  ,"Numero_Cuenta":   "478758" 
+  ,"Tipo_Cuenta":     "Ahorros"
+  ,"Saldo_Inicial":   200520.00
+  ,"Estado":          "TRUE"
+}
+{
+   "Persona_ID":      4
+  ,"Numero_Cuenta":   "495878" 
+  ,"Tipo_Cuenta":     "Ahorros"
+  ,"Saldo_Inicial":   267700.00
+  ,"Estado":          "TRUE"
+}
+{
+   "Persona_ID":      5
+  ,"Numero_Cuenta":   "25487" 
+  ,"Tipo_Cuenta":     "Corriente"
+  ,"Saldo_Inicial":   100
+  ,"Estado":          TRUE
+}
+{
+   "Persona_ID":      6
+  ,"Numero_Cuenta":   "496825" 
+  ,"Tipo_Cuenta":     "Ahorros"
+  ,"Saldo_Inicial":   5401022
+  ,"Estado":          "FALSE"
+}
